@@ -5,7 +5,8 @@
   --color-primary-400: hsl(14, 88%, 65%);
   --color-primary-900: hsl(238, 29%, 16%);
 
-  --color-neutral-100: hsl(240, 5%, 91%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-200: hsl(240, 5%, 91%);
   --color-neutral-500: hsl(240, 6%, 50%);
   --color-neutral-700: hsl(237, 12%, 33%);
 
@@ -16,6 +17,9 @@
     var(--color-gradient-1),
     var(--color-gradient-2)
   );
+
+  --color-shadow: hsl(251, 74%, 27%);
+  --shadow: 0px 50px 50px -20px hsla(var(--color-shadow), 0.5);
 
   --font-family-default: "Kumbh Sans", sans-serif;
 
@@ -53,4 +57,11 @@ body {
   color: var(--color-neutral-700);
   background-image: var(--background-gradient);
   min-height: 100vh;
+}
+
+/* Card */
+.card {
+  border-radius: 23px;
+  background: var(--color-neutral-100);
+  box-shadow: var(--shadow);
 }
