@@ -67,7 +67,7 @@ body {
   color: var(--color-neutral-500);
   background-image: var(--background-gradient);
   min-height: 100vh;
-  padding: 1.5rem;
+  padding: 6.4vw;
 }
 
 /* Card */
@@ -118,9 +118,41 @@ body {
 }
 
 .accordion__panel button i {
+  font-size: 0.65rem;
   color: var(--color-primary-400);
 }
 
 .accordion__content {
   padding-top: 1rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 868px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  .card {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-position: left -100% top 50%;
+    max-width: 920px;
+    margin: 0;
+    padding: 3rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .card__img {
+    position: static;
+    transform: none;
+    width: 50%;
+  }
+
+  .card__content__title {
+    margin-top: 0;
+    text-align: left;
+  }
 }
