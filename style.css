@@ -49,6 +49,16 @@ img {
   height: auto;
 }
 
+button {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /* Global styles */
 
 body {
@@ -62,11 +72,11 @@ body {
 
 /* Card */
 .card {
+  --illustraion-width: 72%;
   margin-top: 33%;
   padding: 1.5rem; /* temporary */
   padding-top: 32%;
   position: relative;
-  --illustraion-width: 72%;
   background-image: url("images/bg-pattern-mobile.svg");
   background-color: var(--color-neutral-100);
   background-repeat: no-repeat;
@@ -82,4 +92,27 @@ body {
   left: 50%;
   transform: translate(-50%, -60%);
   width: var(--illustraion-width);
+}
+
+.card__content__title {
+  text-align: center;
+  font-size: var(--font-size-heading-reg);
+  color: var(--color-primary-900);
+}
+
+.accordion__panel button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-text-lg);
+}
+
+.accordion__panel button[aria-expanded="true"] {
+  color: var(--color-primary-900);
+  font-weight: var(--font-weight-bold);
+}
+
+.accordion__panel button i {
+  color: var(--color-primary-400);
 }
