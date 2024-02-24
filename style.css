@@ -62,16 +62,24 @@ body {
 
 /* Card */
 .card {
+  margin-top: 33%;
+  padding: 1.5rem; /* temporary */
+  padding-top: 32%;
   position: relative;
+  --illustraion-width: 72%;
   background-image: url("images/bg-pattern-mobile.svg");
   background-color: var(--color-neutral-100);
   background-repeat: no-repeat;
-  background-size: contains;
+  background-size: var(--illustraion-width) auto;
   background-position: top;
-  padding: 1.5rem; /* temporary */
   border-radius: 23px;
   box-shadow: var(--shadow);
 }
 
 .card__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: var(--illustraion-width);
 }
