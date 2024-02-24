@@ -64,18 +64,17 @@ button {
 body {
   font-family: var(--font-family-default);
   font-size: var(--font-size-text);
-  color: var(--color-neutral-700);
+  color: var(--color-neutral-500);
   background-image: var(--background-gradient);
   min-height: 100vh;
-  padding: 2.5rem; /* temporary */
+  padding: 1.5rem;
 }
 
 /* Card */
 .card {
   --illustraion-width: 72%;
   margin-top: 33%;
-  padding: 1.5rem; /* temporary */
-  padding-top: 32%;
+  padding: 32% 1.5rem 3rem;
   position: relative;
   background-image: url("images/bg-pattern-mobile.svg");
   background-color: var(--color-neutral-100);
@@ -95,17 +94,22 @@ body {
 }
 
 .card__content__title {
+  margin-top: 1rem;
   text-align: center;
   font-size: var(--font-size-heading-reg);
   color: var(--color-primary-900);
 }
-
+.accordion__panel {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--color-neutral-200);
+}
 .accordion__panel button {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: var(--font-size-text-lg);
+  color: var(--color-neutral-700);
 }
 
 .accordion__panel button[aria-expanded="true"] {
@@ -115,4 +119,8 @@ body {
 
 .accordion__panel button i {
   color: var(--color-primary-400);
+}
+
+.accordion__content {
+  padding-top: 1rem;
 }
