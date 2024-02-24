@@ -62,8 +62,16 @@ body {
 
 /* Card */
 .card {
-  padding: 2.5rem; /* temporary */
+  position: relative;
+  background-image: url("images/bg-pattern-mobile.svg");
+  background-color: var(--color-neutral-100);
+  background-repeat: no-repeat;
+  background-size: contains;
+  background-position: top;
+  padding: 1.5rem; /* temporary */
   border-radius: 23px;
-  background: var(--color-neutral-100);
   box-shadow: var(--shadow);
+}
+
+.card__img {
 }
