@@ -130,25 +130,32 @@ body {
 
 @media screen and (min-width: 868px) {
   body {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    flex-grow: 1;
   }
 
   .card {
     background-image: url("images/bg-pattern-desktop.svg");
     background-position: left -100% top 50%;
     max-width: 920px;
-    margin: 0;
+    margin: 0 auto;
     padding: 3rem 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    overflow: hidden;
   }
 
   .card__img {
-    position: static;
-    transform: none;
     width: 50%;
+    left: 0;
+    top: 50%;
+    transform: translate(-12%, -50%);
   }
 
   .card__content__title {
