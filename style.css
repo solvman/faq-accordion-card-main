@@ -71,6 +71,7 @@ body {
 }
 
 /* Card */
+
 .card {
   --illustraion-width: 72%;
   margin-top: 33%;
@@ -149,13 +150,14 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     overflow: hidden;
+    position: relative;
   }
 
   .card__img {
     width: 50%;
     left: 0;
     top: 50%;
-    transform: translate(-12%, -50%);
+    transform: translate(-12%, -57%);
   }
 
   .card__content__title {
