@@ -94,6 +94,10 @@ body {
   width: var(--illustraion-width);
 }
 
+.card__img--box {
+  display: none;
+}
+
 .card__content__title {
   margin-top: 1rem;
   text-align: center;
