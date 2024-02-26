@@ -146,14 +146,14 @@ body {
 
   .card {
     background-image: url("images/bg-pattern-desktop.svg");
-    background-position: left -100% top 50%;
+    background-position: -460% 50%;
+    background-size: 90%;
     max-width: 920px;
     margin: 0 auto;
     padding: 3rem 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    overflow: hidden;
     position: relative;
   }
 
@@ -161,9 +161,23 @@ body {
     width: 50%;
     left: 0;
     top: 50%;
-    transform: translate(-12%, -57%);
+    transform: translate(0, -50%);
+    overflow: hidden;
   }
 
+  .card__img img {
+    position: relative;
+    left: -12%;
+  }
+
+  .card__img--box {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -20%);
+  }
   .card__content__title {
     margin-top: 0;
     text-align: left;
