@@ -22,17 +22,26 @@
         Frontend Mentor project submission: Accordion Card Main
       </h1>
       <article class="card">
-        <picture>
-          <source
-            media="(min-width: 868px)"
-            srcset="./images/illustration-woman-online-desktop.svg"
-          />
+        <header>
           <img
-            src="./images/illustration-woman-online-mobile.svg"
-            alt="Illustration woman online"
-            class="card__img"
+            src="./images/illustration-box-desktop.svg"
+            alt
+            class="card__img--box"
+            aria-hidden="true"
           />
-        </picture>
+          <div class="card__img">
+            <picture>
+              <source
+                media="(min-width: 868px)"
+                srcset="./images/illustration-woman-online-desktop.svg"
+              />
+              <img
+                src="./images/illustration-woman-online-mobile.svg"
+                alt="Illustration woman online"
+              />
+            </picture>
+          </div>
+        </header>
         <section class="card__content">
           <h2 class="card__content__title">FAQ</h2>
           <div class="accordion">
